@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 app.use(
   expressSession({
-    secret: process.env.EXPRESS_SESSION_SECRET,
+    secret: (process.env.EXPRESS_SESSION_SECRET || sdfsdfsdf),
     resave: false,
     saveUninitialized: true,
   })
