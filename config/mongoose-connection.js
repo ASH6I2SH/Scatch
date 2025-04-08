@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const dbgr = require("debug")("development:mongoose");
 
 mongoose
-  .connect(`mongodb://127.0.0.1:27017/scatch`)
+  .connect("mongodb+srv://scatch:<db_password>@cluster0.63y4few.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(function () {
     dbgr("connected");
   })
